@@ -9,11 +9,11 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts {    /*Entity 클래스는 DB와 직접 연관이 있기 때문에 변경되지 않아야 한다.*/
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //@Id = Table의 PK의미
-    //GenerationType.IDENTITY = Auto increment가 되도
+    //GenerationType.IDENTITY = Auto increment가 되도록
     private Long id;
 
     @Column(length = 500, nullable = false)
