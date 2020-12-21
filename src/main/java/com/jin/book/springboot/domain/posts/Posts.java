@@ -31,4 +31,9 @@ public class Posts {    /*Entity 클래스는 DB와 직접 연관이 있기 때�
         this.author = author;
     }
 
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
+
 }
